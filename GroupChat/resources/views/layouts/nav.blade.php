@@ -9,12 +9,12 @@
       <a href="{{ route('login') }}">{{ __('Login') }}</a>
     @endif
     @if (Route::has('register'))
-      <a href="{{ route('register') }}">{{ __('Register') }}</a>
+      <a href="{{ route('register') }}">{{ __('Cadastro') }}</a>
     @endif
 
   @else
-  <a class="btn btn-light" href="/group/create">Make group</a>
-    <a class="btn btn-light" href="/subscribe">Join group</a>
+  <a class="btn btn-light" href="/group/create">Criar grupo</a>
+    <a class="btn btn-light" href="/subscribe">Juntar-se a um grupo</a>
     @if($users)
      <a href="" style='padding: 11px 24px;'>
        <i class='fas fa-bell' style='font-size:28px;color:red'></i>

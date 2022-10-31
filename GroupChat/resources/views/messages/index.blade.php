@@ -24,19 +24,19 @@
     <div class="row">
       <div class="col-md-4">
         <p>
-          <a class="btn btn-info" href="/group/edit/{{$group->id}}" style="color:white;">Edit</a>
+          <a class="btn btn-info" href="/group/edit/{{$group->id}}" style="color:white;">Editar</a>
         </p>
       </div>
       <div class="col-md-4">
         <form action="/group/delete/{{$group->id}}" method="POST">
             @csrf
             @method('Delete')
-            <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure?')">Delete group</button>
+            <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure?')">Apagar grupo</button>
         </form>
       </div>
       <div class="col-md-4">
         <p>
-          <a class="btn btn-warning" href="/group/members_list/{{$group->id}}" style="color:white;">Remove users</a>
+          <a class="btn btn-warning" href="/group/members_list/{{$group->id}}" style="color:white;">Remover usuarios</a>
         </p>
       </div>
     </div>

@@ -22,13 +22,13 @@
                                     @csrf
                                     @method('Delete')
 
-                                    <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure?')">Delete group</button>
+                                    <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure?')">Apagar grupo</button>
                                 </form>
                             </div>
 
                             <div class="col-md-4">
                                 <p>
-                                    <a class="btn btn-warning" href="/group/members_list/{{$group->id}}" style="color:white;">Remove users</a>
+                                    <a class="btn btn-warning" href="/group/members_list/{{$group->id}}" style="color:white;">Remover usuarios</a>
                                 </p>
                             </div>
                         </div>
@@ -57,7 +57,7 @@
                                 <strong>{{$message}}</strong>
                             </span>
                         @enderror
-                        <button class="btn btn-primary" type="submit">Send message</button>
+                        <button class="btn btn-primary" type="submit">Enviar messagem</button>
                     </form>
                 </div>
             </div>

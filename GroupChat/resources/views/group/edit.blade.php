@@ -18,7 +18,7 @@
                         @csrf
 
                         <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">Group name</label>
+                            <label for="name" class="col-md-6 col-form-label text-md-right">Nome do grupo</label>
 
                             <div class="col-md-6">
                                 <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{$group->name}}" required autocomplete="name" autofocus>
@@ -29,12 +29,23 @@
                                     </span>
                                 @enderror
                             </div>
+
+                            <label for="description" class="col-md-6 col-form-label text-md-right">Descricao</label>
+                            <div class="col-md-6">
+                                <input id="description" type="text" class="form-control @error('description') is-invalid @enderror" name="description" value="{{ old('description') }}" required autocomplete="description" autofocus>
+
+                                @error('description')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
                         </div> <br>
 
                         <div class="form-group row mb-2">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
-                                    Edit a group
+                                    Salvar alteracoes
                                 </button>
                             </div>
                         </div>
